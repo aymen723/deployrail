@@ -1,10 +1,10 @@
 //import logo from './logo.svg';
 import './App.css';
-
+import Page from "./comp/page/page";
 function App() {
   return (
     <div className="App">
-    <div> zda</div>
+        <Page></Page>
     </div>
   );
 }
