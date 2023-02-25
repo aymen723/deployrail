@@ -3,6 +3,12 @@ import "./pagestyle.css";
 import logo from "./ultrapics/logo.png";
 // import Sidebar from "./sidebar/sidebar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  solid,
+  regular,
+  brands,
+  icon,
+} from "@fortawesome/fontawesome-svg-core/import.macro";
 function Page() {
   return (
     <div className="page">
@@ -11,10 +17,7 @@ function Page() {
           <img src={logo} alt="logo" className="logo"></img>
           <h1 className="landigtitle">ULTRA DESING</h1>
           <h5 className="text">we are a Freelaning comapny</h5>
-          <FontAwesomeIcon
-            style={{ width: "10px", height: "1Opx", color: "white" }}
-            icon="fa-brands fa-facebook"
-          ></FontAwesomeIcon>
+          <FontAwesomeIcon icon={brands("twitter")} />
         </div>
       </div>
 
