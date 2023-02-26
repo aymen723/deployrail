@@ -1,7 +1,7 @@
 .page {
   width: 100%;
   height: 100%;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   /* display: flex; */
   /* justify-content: center; */
   /* flex-direction: column;
@@ -32,10 +32,14 @@
   height: 100vh;
   top: 0;
   left: 0;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  border-right: 0.5px solid rgba(255, 255, 255, 0.2);
   position: fixed;
   justify-content: space-around;
+  /* flex-direction: column; */
+  display: flex;
   flex-direction: column;
+  justify-content: space-between;
 
   /* position: fixed; */
 }
@@ -68,6 +72,12 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: tajawal;
+  src: url("./fonts/Tajawal-Regular.ttf");
+  font-display: swap;
+}
+
 .landigtitle {
   font-family: "squal", Arial, Helvetica, sans-serif;
   /* letter-spacing: 2mm; */
@@ -91,18 +101,42 @@
   color: white;
 }
 
-/* .letterbox {
-  border: 1px solid blue;
-  width: fit-content;
-  height: fit-content;
-} */
+.letterbox {
+  /* border: 1px solid blue; */
+  width: auto;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: fit-content;
+  height: fit-content; */
+}
+
+.iconcontainer {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconsidebar {
+  /* border: 1px solid white; */
+  width: auto;
+  height: 80%;
+  /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+}
 .iconsbar {
   /* border: 1px solid blue; */
-  width: 300px;
+  width: 100px;
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
   /* align-items: center; */
+
   /* margin-right: 20px; */
 }
 
@@ -129,7 +163,14 @@
   font-size: 15px;
   color: white;
   font-family: Helvetica, sans-serif;
+  margin: 0;
 }
+.aboutuscontainer {
+  border: 1px solid purple;
+  width: 92%;
+  flex: 1;
+}
+
 .progress {
   position: fixed;
   left: 0;
@@ -137,4 +178,115 @@
   height: 5px;
   background: white;
   /* bottom: 100px; */
+}
+
+.companycontainer {
+  /* border: 1px solid black; */
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.companytitle {
+  border: 1px solid white;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.companytitlefont {
+  color: white;
+  font-family: "squal", Arial, Helvetica, sans-serif;
+
+  margin-left: 10px;
+}
+
+.defsection {
+  width: 100%;
+  height: 500px;
+  border: 1px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.teamsection {
+  border: 1px solid red;
+  width: 50%;
+  height: 100%;
+}
+
+.teamdesc {
+  width: 100%;
+  border: 1px solid green;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.text {
+  font: 50px;
+  font-family: "tajawal";
+  color: white;
+  font-weight: bold;
+}
+
+.titlecontainer {
+  width: 100%;
+  border: 1px solid white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+.archiiconcontainer {
+  width: 50px;
+  background-color: white;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+}
+.teamtitle {
+  /* font: 50px; */
+  font-family: "squal";
+  color: white;
+  /* font-weight: bold; */
+  margin-left: 10px;
+}
+
+.teamskillcontainer {
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.teamskill {
+  color: white;
+  font-family: "tajawal";
+}
+
+.skills {
+  width: 100%;
+  height: 100%;
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0;
+  padding: 5px;
+  /* padding-left: 10px; */
 }

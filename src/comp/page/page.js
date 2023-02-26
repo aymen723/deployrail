@@ -12,6 +12,9 @@ import {
   // useTransform,
   // MotionValue,
 } from "framer-motion";
+import ApartmentRoundedIcon from "@mui/icons-material/ApartmentRounded";
+import ArchitectureRoundedIcon from "@mui/icons-material/ArchitectureRounded";
+// import { Sort } from "@mui/icons-material";
 
 function Page() {
   const ref = useRef(null);
@@ -59,19 +62,81 @@ function Page() {
 
       <div className="sidebar">
         <div className="letterbox">
-          <h1 className="letter">
-            H<span style={{ color: "red" }}>.</span>
-          </h1>
+          <h2 className="letter">
+            U<span style={{ color: "red" }}>.</span>
+          </h2>
         </div>
 
         <div className="iconsidebar">
-          <h1>a</h1>
-          <h1>a</h1>
-          <h1>a</h1>
+          <div className="iconcontainer">
+            <MouseOutlinedIcon
+              className="icon"
+              fontSize="small"
+            ></MouseOutlinedIcon>
+          </div>
+
+          <div className="iconcontainer">
+            <MouseOutlinedIcon
+              className="icon"
+              fontSize="small"
+            ></MouseOutlinedIcon>
+          </div>
+          <div className="iconcontainer">
+            <MouseOutlinedIcon
+              className="icon"
+              fontSize="small"
+            ></MouseOutlinedIcon>
+          </div>
         </div>
       </div>
       <div className="landingpage">
-        <div className="about"></div>
+        <div className="aboutuscontainer">
+          <div className="companytitle">
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              className="companycontainer"
+            >
+              <ApartmentRoundedIcon fontSize="large"></ApartmentRoundedIcon>
+            </motion.div>
+            <h2 className="companytitlefont">About us</h2>
+          </div>
+          <div className="defsection">
+            <div className="teamsection">
+              <div className="teamdesc">
+                <div className="titlecontainer">
+                  <motion.div
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="archiiconcontainer"
+                  >
+                    <ArchitectureRoundedIcon fontSize="large"></ArchitectureRoundedIcon>
+                  </motion.div>
+                  <h4 className="teamtitle">ARCHITECTURE TEAM </h4>
+                </div>
+                <div className="teamskillcontainer">
+                  <h2 className="teamskill">SKILLS</h2>
+                </div>
+                <div className="skills">
+                  <span className="text">Architectural design</span>
+                  <b className="text" style={{ display: "block" }}>
+                    architectural design
+                  </b>
+                  <b className="text" style={{ display: "block" }}>
+                    Planning
+                  </b>
+                  <b className="text" style={{ display: "block" }}>
+                    2D Technical Drawing (Architectural Draftsman)
+                  </b>
+                  <b className="text" style={{ display: "block" }}>
+                    3D modeling, and animation
+                  </b>
+                </div>
+              </div>
+            </div>
+            <div className="teamsection">azdaz</div>
+          </div>
+        </div>
       </div>
     </div>
   );
